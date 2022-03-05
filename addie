@@ -1,0 +1,7 @@
+#!/bin/bash
+echo -n "enter your username: "
+read username
+echo -n "enter your password: "
+read -s password
+sudo adduser "$username
+echo "$password" | passwd $username --stdin
